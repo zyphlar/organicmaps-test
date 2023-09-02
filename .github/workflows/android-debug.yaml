@@ -1,0 +1,77 @@
+name: Android Debug
+on:
+  workflow_dispatch: # Manual trigger
+  pull_request:
+    paths-ignore:
+      - .gitignore
+      - .github/**
+      - '!.github/workflows/android-beta.yaml'  # Run check on self change
+      - '**/*_tests/**'
+      - '**/CMakeLists.txt'
+      - CONTRIBUTORS
+      - LICENSE
+      - NOTICE
+      - README.md
+      - iphone/**
+      - data/strings/**
+      - docs/**
+      - generator/**
+      - packaging/**
+      - pyhelpers/**
+      - qt*/**
+      - skin_generator/**
+      - tools/**
+      - track_generator/**
+      - xcode/**
+
+env:
+  JAVA_HOME: /usr/lib/jvm/temurin-17-jdk-amd64  # Java 17 is required for Android Gradle 8 plugin
+
+jobs:
+  android-google-debug:
+    name: Android Google Debug
+    runs-on: ubuntu-latest
+    environment: debug
+    steps:
+      - name: Install build tools and dependencies
+        shell: bash
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y ninja-build
+
+      - name: Checkout sources
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 100 # enough to get all commits for the current day
+
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
+
+      - name: Configure repo
+        shell: bash
+        run: |
+          ./configure.sh
+
+      - name: Compile
+        shell: bash
+        working-directory: android
+        run: |
+          cmake --version
+          ninja --version
+          ./gradlew assembleFdroidDebug
+
+      - name: Upload debug apk to Github job artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: debug-apk
+          path: |
+            android/app/build/outputs/apk/*/*/*.apk
+
+      - name: Upload debug apk to Github release if this is a tagged commit
+        uses: fnkr/github-action-ghr@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GHR_COMPRESS: zip
+          GHR_PATH: android/app/build/outputs/apk/
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

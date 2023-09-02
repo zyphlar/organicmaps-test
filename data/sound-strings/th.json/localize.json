@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"อีกสองกิโลเมตรครึ่ง",
 "in_3_kilometers":"อีกสามกิโลเมตร",
 "then":"จากนั้น",
+"dist_direction_onto_street":"%1$s %2$s เข้าสู่ %3$s",
 "take_the_1_exit":"ออกทางออกที่หนึ่ง",
 "take_the_2_exit":"ออกทางออกที่สอง",
 "take_the_3_exit":"ออกทางออกที่สาม",

@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Dans deux virgule cinq kilomètres",
 "in_3_kilometers":"Dans trois kilomètres",
 "then":"Puis",
+"dist_direction_onto_street":"%1$s %2$s sur %3$s",
 "take_the_1_exit":"Prenez la première sortie.",
 "take_the_2_exit":"Prenez la deuxième sortie.",
 "take_the_3_exit":"Prenez la troisième sortie.",

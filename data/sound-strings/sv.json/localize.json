@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Om två och en halv kilometer",
 "in_3_kilometers":"Om tre kilometer",
 "then":"Efter det",
+"dist_direction_onto_street":"%1$s %2$s in på %3$s",
 "take_the_1_exit":"Ta första avfarten.",
 "take_the_2_exit":"Ta andra avfarten.",
 "take_the_3_exit":"Ta tredje avfarten.",

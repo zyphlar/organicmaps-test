@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Tra due chilometri e mezzo",
 "in_3_kilometers":"Tra tre chilometri",
 "then":"Poi",
+"dist_direction_onto_street":"%1$s %2$s sulla %3$s",
 "take_the_1_exit":"Prendi la prima uscita.",
 "take_the_2_exit":"Prendi la seconda uscita.",
 "take_the_3_exit":"Prendi la terza uscita.",

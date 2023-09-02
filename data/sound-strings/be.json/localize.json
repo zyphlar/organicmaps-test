@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Праз два з паловай кіламетры",
 "in_3_kilometers":"Праз тры кіламетры",
 "then":"Потым",
+"dist_direction_onto_street":"%1$s %2$s на %3$s",
 "take_the_1_exit":"Збочце на першы з'езд.",
 "take_the_2_exit":"Збочце на другі з'езд.",
 "take_the_3_exit":"Збочце на трэці з'езд.",

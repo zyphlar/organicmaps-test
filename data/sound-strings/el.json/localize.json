@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Σε δυόμισι χιλιόμετρα",
 "in_3_kilometers":"Σε τρία χιλιόμετρα",
 "then":"Στη συνέχεια",
+"dist_direction_onto_street":"%1$s %2$s στην %3$s",
 "take_the_1_exit":"Πάρτε την πρώτη έξοδο.",
 "take_the_2_exit":"Πάρτε τη δεύτερη έξοδο.",
 "take_the_3_exit":"Πάρτε την τρίτη έξοδο.",

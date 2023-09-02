@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"이점오 킬로미터 앞",
 "in_3_kilometers":"삼 킬로미터 앞",
 "then":"그 다음",
+"dist_direction_onto_street":"%1$s %2$s %3$s",
 "take_the_1_exit":"첫 번째 출구입니다.",
 "take_the_2_exit":"두 번째 출구입니다.",
 "take_the_3_exit":"세 번째 출구입니다.",

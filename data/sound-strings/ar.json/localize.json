@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"بعد كيلومترين ونصف",
 "in_3_kilometers":"بعد ثلاثة كيلومترات",
 "then":"ثم",
+"dist_direction_onto_street":"%1$s %2$s ﺈﻟﻯ \u202C %3$s",
 "take_the_1_exit":"اسلك المخرج الأول.",
 "take_the_2_exit":"اسلك المخرج الثاني.",
 "take_the_3_exit":"اسلك المخرج الثالث.",

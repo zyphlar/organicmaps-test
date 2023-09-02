@@ -30,6 +30,7 @@
 "in_2_5_kilometers":"Za dva a půl kilometru",
 "in_3_kilometers":"Za tři kilometry",
 "then":"Poté",
+"dist_direction_onto_street":"%1$s %2$s na %3$s",
 "take_the_1_exit":"Vyjeďte prvním výjezdem.",
 "take_the_2_exit":"Vyjeďte druhým výjezdem.",
 "take_the_3_exit":"Vyjeďte třetím výjezdem.",
